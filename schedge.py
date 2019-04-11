@@ -96,11 +96,10 @@ def inFromJson(inFile):
     return totalClasses
 
 
-    
-
 def addToJson(inFile, inCourse):
     try:
         newData = json.load(open(inFile))
+        print("loaded ", inFile)
     except json.JSONDecodeError:
         print("Not a json file")
         return 0
@@ -112,7 +111,8 @@ def addToJson(inFile, inCourse):
         newData["lineItems"].append(inCourse.data)
 
 
-    with open('test2.json', 'w') as outfile:
+    with open(inFile, 'w') as outfile:
+        print("dumping json")
         json.dump(newData, outfile, indent=4)
 
     return 1
@@ -163,10 +163,3 @@ def optimize(classList, blocks):
 
         return optimize(classList[1:], itemsList[index])
 
-
-best = optimize(inFromJson("test.json"), [])
-
-print(best, priorityOfList(best))
-print(listConflict(best))
-
-#83 121 82 83

@@ -1,90 +1,132 @@
 {
-  "lineItems" : [
-    {
-      "number" : "CS080",
-      "priority" : 3,
-      "times" : [
+    "lineItems": [
         {
-          "day" : "mon",
-          "start" : 795,
-          "end" : 885
+            "number": "CS080",
+            "priority": 3,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 795,
+                    "end": 885
+                },
+                {
+                    "day": "W",
+                    "start": 795,
+                    "end": 885
+                }
+            ]
         },
         {
-          "day" : "wed",
-          "start" : 795,
-          "end" : 885
-        }
-        
-        ]
-    },
-    {
-      "number" : "CS081",
-      "priority" : 1,
-      "times" : [
-        {
-          "day" : "mon",
-          "start" : 795,
-          "end" : 885
+            "number": "CS081",
+            "priority": 1,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 795,
+                    "end": 885
+                },
+                {
+                    "day": "W",
+                    "start": 795,
+                    "end": 885
+                }
+            ]
         },
         {
-          "day" : "wed",
-          "start" : 795,
-          "end" : 885
-        }
-        
-        ]
-    },
-    {
-      "number" : "CS082",
-      "priority" : 8,
-      "times" : [
-        {
-          "day" : "mon",
-          "start" : 795,
-          "end" : 885
+            "number": "CS082",
+            "priority": 8,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 795,
+                    "end": 885
+                },
+                {
+                    "day": "W",
+                    "start": 795,
+                    "end": 885
+                }
+            ]
         },
         {
-          "day" : "wed",
-          "start" : 795,
-          "end" : 885
-        }
-        
-        ]
-    },
-    {
-      "number" : "CS083",
-      "priority" : 7,
-      "times" : [
-        {
-          "day" : "mon",
-          "start" : 795,
-          "end" : 885
+            "number": "CS083",
+            "priority": 7,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 795,
+                    "end": 885
+                },
+                {
+                    "day": "W",
+                    "start": 795,
+                    "end": 885
+                }
+            ]
         },
         {
-          "day" : "wed",
-          "start" : 795,
-          "end" : 885
-        }
-        
-        ]
-    },
-    {
-      "number" : "CS121",
-      "priority" : 3,
-      "times" : [
-        {
-          "day" : "wed",
-          "start" : 800,
-          "end" : 900
+            "number": "CS121",
+            "priority": 3,
+            "times": [
+                {
+                    "day": "W",
+                    "start": 800,
+                    "end": 900
+                },
+                {
+                    "day": "M",
+                    "start": 800,
+                    "end": 900
+                }
+            ]
         },
         {
-          "day" : "mon",
-          "start" : 800,
-          "end" : 900
+            "number": "CS121",
+            "priority": 3,
+            "times": [
+                {
+                    "day": "W",
+                    "start": 800,
+                    "end": 900
+                },
+                {
+                    "day": "M",
+                    "start": 800,
+                    "end": 900
+                }
+            ]
+        },
+        {
+            "number": "CS99999",
+            "priority": 3,
+            "times": [
+                {
+                    "day": "W",
+                    "start": 800,
+                    "end": 900
+                },
+                {
+                    "day": "M",
+                    "start": 800,
+                    "end": 900
+                }
+            ]
+        },
+        {
+            "number": "191911",
+            "priority": "1",
+            "times": [
+                {
+                    "day": "T",
+                    "start": 795,
+                    "end": 1380
+                },
+                {
+                    "day": "R",
+                    "start": 795,
+                    "end": 1380
+                }
+            ]
         }
-        
-        ]
-    }
-    
     ]
 }
