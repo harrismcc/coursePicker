@@ -1,4 +1,5 @@
 import json
+import operator
 import sys, getopt
 
 
@@ -69,6 +70,16 @@ class course:
     def __repr__(self):
         return str(self)
 
+    # > >= < <= #
+    def __lt__(self, other):
+        return self.priority < other.priority
+    def __le__(self, other):
+        return self.priority <= other.priority
+    def __gt__(self, other):
+        return self.priority > other.priority
+    def __ge__(self, other):
+        return self.priority >= other.priority
+
 
 
 
@@ -84,7 +95,7 @@ def inFromJson(inFile):
     
     return totalClasses
 
-def toJson(course):
+
     
 
 def addToJson(inFile, inCourse):
@@ -106,3 +117,56 @@ def addToJson(inFile, inCourse):
 
     return 1
 
+def priorityOfList(l):
+    sum = 0
+
+    if l == None:
+        return 0
+    
+    if listConflict(l):
+        return 0
+
+    for item in l:
+        sum += item.priority
+
+    #if conflict exists, return 0
+    return sum
+
+def listConflict(l):
+    #tests if there are conflicts anywhere in the list
+    for item in l:
+        if item != l[0]:
+            return l[0].conflicts(item)
+        
+    return False
+
+def optimize(classList, blocks):
+    #Use it or lose it
+    if len(blocks) < 4:
+        blocks = classList[:4]
+        return optimize(classList[4:], blocks)
+    elif len(classList) < 1:
+        return blocks
+    else:
+        
+        replaceFirst = optimize(classList[1:], [classList[0], blocks[1], blocks[2], blocks[3]])
+        replaceSecond = optimize(classList[1:], [blocks[0], classList[0], blocks[2], blocks[3]])
+        replaceThird = optimize(classList[1:], [blocks[0], blocks[1], classList[0], blocks[3]])
+        replaceFourth = optimize(classList[1:], [blocks[0], blocks[1], blocks[3], classList[0]])
+        replaceNone = optimize(classList[1:], blocks)
+        itemsList = [replaceFirst, replaceSecond, replaceThird, replaceFourth, replaceNone]
+
+        test = [priorityOfList(l) for l in itemsList]
+        index, value = max(enumerate(test), key=operator.itemgetter(1))
+
+        #print(itemsList[index], value)
+
+        return optimize(classList[1:], itemsList[index])
+
+
+best = optimize(inFromJson("test.json"), [])
+
+print(best, priorityOfList(best))
+print(listConflict(best))
+
+#83 121 82 83

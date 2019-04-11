@@ -1,8 +1,59 @@
 {
   "lineItems" : [
     {
+      "number" : "CS080",
+      "priority" : 3,
+      "times" : [
+        {
+          "day" : "mon",
+          "start" : 795,
+          "end" : 885
+        },
+        {
+          "day" : "wed",
+          "start" : 795,
+          "end" : 885
+        }
+        
+        ]
+    },
+    {
       "number" : "CS081",
-      "priority" : 5,
+      "priority" : 1,
+      "times" : [
+        {
+          "day" : "mon",
+          "start" : 795,
+          "end" : 885
+        },
+        {
+          "day" : "wed",
+          "start" : 795,
+          "end" : 885
+        }
+        
+        ]
+    },
+    {
+      "number" : "CS082",
+      "priority" : 8,
+      "times" : [
+        {
+          "day" : "mon",
+          "start" : 795,
+          "end" : 885
+        },
+        {
+          "day" : "wed",
+          "start" : 795,
+          "end" : 885
+        }
+        
+        ]
+    },
+    {
+      "number" : "CS083",
+      "priority" : 7,
       "times" : [
         {
           "day" : "mon",
