@@ -114,7 +114,7 @@
         },
         {
             "number": "191911",
-            "priority": "1",
+            "priority": 1,
             "times": [
                 {
                     "day": "T",

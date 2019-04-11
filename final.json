@@ -1,0 +1,110 @@
+{
+    "lineItems": [
+        {
+            "number": "CSCI081",
+            "priority": 10,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 795,
+                    "end": 870
+                },
+                {
+                    "day": "W",
+                    "start": 795,
+                    "end": 870
+                }
+            ]
+        },
+        {
+            "number": "CSCI081",
+            "priority": 10,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 885,
+                    "end": 960
+                },
+                {
+                    "day": "W",
+                    "start": 885,
+                    "end": 960
+                }
+            ]
+        },
+        {
+            "number": "CSCI121",
+            "priority": 10,
+            "times": [
+                {
+                    "day": "T",
+                    "start": 795,
+                    "end": 870
+                },
+                {
+                    "day": "R",
+                    "start": 795,
+                    "end": 870
+                },
+                {
+                    "day": "F",
+                    "start": 600,
+                    "end": 650
+                }
+            ]
+        },
+        {
+            "number": "CSCI121",
+            "priority": 10,
+            "times": [
+                {
+                    "day": "T",
+                    "start": 885,
+                    "end": 960
+                },
+                {
+                    "day": "R",
+                    "start": 885,
+                    "end": 960
+                },
+                {
+                    "day": "F",
+                    "start": 600,
+                    "end": 650
+                }
+            ]
+        },
+        {
+            "number": "CSCI181P",
+            "priority": 5,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 660,
+                    "end": 1455
+                },
+                {
+                    "day": "W",
+                    "start": 660,
+                    "end": 1455
+                }
+            ]
+        },
+        {
+            "number": "CSCI181S",
+            "priority": 3,
+            "times": [
+                {
+                    "day": "M",
+                    "start": 885,
+                    "end": 960
+                },
+                {
+                    "day": "W",
+                    "start": 885,
+                    "end": 960
+                }
+            ]
+        }
+    ]
+}

@@ -112,7 +112,6 @@ def addToJson(inFile, inCourse):
 
 
     with open(inFile, 'w') as outfile:
-        print("dumping json")
         json.dump(newData, outfile, indent=4)
 
     return 1
@@ -127,6 +126,11 @@ def priorityOfList(l):
         return 0
 
     for item in l:
+
+        if item.number == l[0].number:
+            print("same name")
+            return 0
+
         sum += item.priority
 
     #if conflict exists, return 0
@@ -163,3 +167,6 @@ def optimize(classList, blocks):
 
         return optimize(classList[1:], itemsList[index])
 
+clist = inFromJson("final.json")
+
+print(optimize(clist, []))

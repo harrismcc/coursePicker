@@ -73,7 +73,7 @@ class MyFirstGUI:
     def addClass(self):
         data = {}
         data["number"] = self.number_box.get()
-        data["priority"] = self.priority_box.get()
+        data["priority"] = int(self.priority_box.get())
         data["times"] = []
         
 
@@ -97,9 +97,7 @@ class MyFirstGUI:
                 data["times"].append(dayData)
 
         newCourse = schedge.course(data)
-        print("FileName: ", self.json_box.get())
         my_addToJson(self.json_box.get(), newCourse)
-        print("sent add")
 
     def parseTime(self, tString):
         #turns a time in format (11:45AM) into mpm
